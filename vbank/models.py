@@ -11,7 +11,7 @@ class Transaction(models.Model):
     debit           = models.IntegerField(default=0)
     combined        = models.BooleanField(default=False)
     virtual         = models.BooleanField(default=False)
-    virtual_txn     = models.ForeignKey('self', related_name='virtual_txn', null=True, blank=True)
+    virtual_txn     = models.ForeignKey('self', null=True, blank=True)
     bank            = models.CharField(max_length=100)
     date            = models.DateTimeField(default=None, blank=True)
     month           = models.DateField(default=None, blank=True)
