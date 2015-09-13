@@ -6,17 +6,15 @@ import uuid
 
 class Transaction(models.Model):
 
-    id              = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id              = models.UUIDField(primary_key=True, default=uuid.uuid4)
     credit          = models.IntegerField(default=0)
     debit           = models.IntegerField(default=0)
     combined        = models.BooleanField(default=False)
-    virtual         = models.BooleanField(default=False)
-    virtual_txn     = models.ForeignKey('self', null=True, blank=True)
-    bank            = models.CharField(max_length=100)
+    v_transaction   = models.ForeignKey('self', null=True, blank=True)
     date            = models.DateTimeField(default=None, blank=True)
     month           = models.DateField(default=None, blank=True)
     type            = models.CharField(default='', blank=True, max_length=100)
-    bank            = models.CharField(default='', blank=True, max_length=100)
+    institution     = models.CharField(default='', blank=True, max_length=100)
 
     def __str__(self):
         return '[-' + credit + '][+' + debit + ']'
@@ -33,3 +31,15 @@ class Transaction(models.Model):
 
         #         )
         pass
+
+class VirtualTransaction(models.Model):
+
+    id              = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    credit          = models.IntegerField(default=0)
+    debit           = models.IntegerField(default=0)
+    combined        = models.BooleanField(default=False)
+    date            = models.DateTimeField(default=None, blank=True)
+    month           = models.DateField(default=None, blank=True)
+    type            = models.CharField(default='', blank=True, max_length=100)
+    institution     = models.CharField(default='', blank=True, max_length=100)
+
