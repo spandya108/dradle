@@ -34,7 +34,7 @@ class PhysicalTransaction(Transaction):
 
 class VirtualTransaction(Transaction):
 
-    name            = models.CharField(null=False, max_length=100)
+    name            = models.CharField(null=False, max_length=100, default='')
     count           = models.IntegerField(default=1)
 
 
