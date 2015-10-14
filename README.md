@@ -4,6 +4,11 @@ virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
 ```
+Installing Django extensions:
+```
+pip install django-extensions
+```
+(Can find the documentation here: https://github.com/django-extensions/django-extensions/tree/master/)
 
 Installing PostgreSQL:
 ```
