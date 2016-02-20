@@ -1,7 +1,7 @@
 from django.conf.urls import url
 
-from . import views
+from views import OverviewView
 
 urlpatterns = [
-    url(r'^$', views.index, name='index')
+    url(r'^$', OverviewView.as_view(), name='overview')
 ]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<style>
+.FlexContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.FlexContainer--column {
+    flex-direction: column;
+}
+
+.FlexContainer--row {
+    flex-direction: row;
+}
+
+.FlexContainer-inner {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+}
+
+.FlexContainer--column > .FlexContainer-inner {
+    height: auto;
+    width: 100%;
+}
+
+.FlexContainer--row > .FlexContainer-inner {
+    width: auto;
+    height: 100%;
+}
+
+.BodyContainer {
+    top: 80px;
+}
+</style>
+    <head>
+        <title>Overview</title>
+    </head>
+    <body>
+        <div class="FlexContainer FlexContainer--column">
+            <div class="FlexContainer-inner">
+                {% include "navbar.html" %}
+                <div class="FlexContainer">
+                    <div class="FlexContainer BodyContainer FlexContainer--row">
+                        <div class="FlexContainer-inner">
+                            {% include "sidebar.html" %}
+                            {% include "transactions_list.html" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
