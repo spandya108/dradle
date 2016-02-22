@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <style>
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
 .FlexContainer {
     display: flex;
     position: absolute;
@@ -41,6 +45,8 @@
 </style>
     <head>
         <title>Overview</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="FlexContainer FlexContainer--column">
@@ -51,6 +57,7 @@
                         <div class="FlexContainer-inner">
                             {% include "sidebar.html" %}
                             {% include "transactions_list.html" %}
+                            {% include "details.html" %}
                         </div>
                     </div>
                 </div>

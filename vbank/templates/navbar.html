@@ -1,12 +1,77 @@
-<!-- <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/navbar.css"> -->
 <style>
 .Navbar {
     height: 80px;
     width: 100%;
-    box-shadow: 2px 2px 2px #ddd;
+    box-shadow: 2px 2px 10px #bbb;
+    border-bottom: 1px solid #ddd;
 }
 
+.Navbar-logo-container {
+    float: left;
+    height: 100%;
+    width: 100px;
+}
+
+.Navbar-s2s-container {
+    padding: 15px 10px;
+    float: left;
+    width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.Navbar-s2s-amount {
+    display: inline-block;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #529acd;
+    color: #fff;
+    line-height: 22pt;
+    font-size: 22pt;
+    font-weight: 600;
+    float: left;
+    border-radius: 5px;
+}
+
+.Navbar-available-amount-container {
+    display: inline-block;
+    font-size: 10pt;
+    line-height: 10pt;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.Navbar-available-amount {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #000;
+    opacity: 0.3;
+}
+
+.Navbar-navitems-container {
+    width: 500px;
+    height: 100%;
+    float: right;
+}
 </style>
 <div class="Navbar">
+    <div class="Navbar-logo-container">
 
+    </div>
+    <div class="Navbar-s2s-container">
+        <div class="Navbar-s2s-amount">
+            $12,535.34
+        </div>
+        <div class="Navbar-available-amount-container">
+            <div class="Navbar-available-amount">
+                $17,332.67 available balance
+            </div>
+            <div class="Navbar-available-amount">
+                $4,797.33 saved in 7 goals
+            </div>
+        </div>
+    </div>
+    <div class="Navbar-navitems-container">
+
+    </div>
 </div>
