@@ -13,12 +13,16 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(PROJECT_DIR, ...)
 import os
 
-abspath = lambda *path: os.path.abspath(os.path.join(*path))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+STATIC_URL = '/static/'
+
 PROJECT_URL = 'http://localhost:8000'
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-STATIC_URL = PROJECT_URL + '/static/'
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -74,9 +78,6 @@ TEMPLATES = [
             ],
         },
     },
-]
-
-STATICFILES_DIRS = [
 ]
 
 WSGI_APPLICATION = 'dradle.wsgi.application'
