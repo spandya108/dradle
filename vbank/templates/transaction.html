@@ -1,26 +1,24 @@
+{% load humanize %}
 <li class="Transaction">
     <div class="Transaction-dateTime">
         <div class="Transaction-dateTime-month">
-            Jan
+            {{ transaction.month|date:'N'|slice:"3" }}
         </div>
         <div class="Transaction-dateTime-day">
-            27
-        </div>
-        <div class="Transaction-dateTime-time">
-            12:01PM
+            {{ transaction.month|date:'d' }}
         </div>
     </div>
     <div class="Transaction-details">
         <div class="Transaction-details-row">
             <div class="Transaction-details-title">
-                The Grove Yerba Buena Gardens
+                {{ transaction.label }}
             </div>
             <div class="Transaction-details-amount Transaction-details-amount--credit">
-                - $18.43
+                - ${{ transaction.amount|floatformat:2|intcomma }}
             </div>
         </div>
         <div class="Transaction-details-description">
-            Grabbing lunch with some coworkers for a meeting to include a description in my transaction.
+            Testing out a description here but it would be neat to be able to edit it!
         </div>
         <div class="Transaction-details-tagContainer">
             <div class="Transaction-tag Transaction-tag--blue">

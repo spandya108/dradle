@@ -5,7 +5,7 @@ import uuid
 class Transaction(models.Model):
 
     id              = models.UUIDField(primary_key=True, default=uuid.uuid4)
-    amount          = models.IntegerField(default=0)
+    amount          = models.FloatField(default=0)
     date            = models.DateTimeField(default=None, blank=True)
     month           = models.DateTimeField(default=None, blank=True)
     type            = models.CharField(default='', blank=True, max_length=100)
@@ -14,7 +14,7 @@ class Transaction(models.Model):
     description     = models.TextField(null=True)
 
     def __str__(self):
-        return '[-' + str(self.credit) + '][+' + str(self.debit) + ']'
+        return str(self.institution) + ': ' + str(self.label) + ' - ' + str(self.amount)
 
     @property
     def name(self):

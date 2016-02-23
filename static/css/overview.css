@@ -39,7 +39,7 @@
   width: 50px;
   text-align: center;
   /*box-shadow: 1px 1px 5px #bbb;*/
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 /* line 18, ../scss/_transaction.scss */
@@ -52,14 +52,6 @@
 }
 
 /* line 26, ../scss/_transaction.scss */
-.Transaction-dateTime-time {
-  font-size: 7pt;
-  line-height: 7pt;
-  color: #ababab;
-  margin-top: 2px;
-}
-
-/* line 33, ../scss/_transaction.scss */
 .Transaction-dateTime-day {
   color: #8f8f8f;
   font-weight: bold;
@@ -67,52 +59,52 @@
   line-height: 14pt;
 }
 
-/* line 40, ../scss/_transaction.scss */
+/* line 33, ../scss/_transaction.scss */
 .Transaction-details {
   float: left;
   height: 100%;
   box-sizing: border-box;
   width: 550px;
-  padding: 15px;
+  padding: 10px 15px 10px 10px;
 }
 
-/* line 48, ../scss/_transaction.scss */
+/* line 41, ../scss/_transaction.scss */
 .Transaction-details-row {
-  height: 20px;
+  height: 25px;
 }
 
-/* line 52, ../scss/_transaction.scss */
+/* line 45, ../scss/_transaction.scss */
 .Transaction-details-title {
   font-size: 16pt;
-  line-height: 16pt;
+  line-height: 20pt;
   max-width: 300px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   color: #000;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-/* line 64, ../scss/_transaction.scss */
+/* line 57, ../scss/_transaction.scss */
 .Transaction-details-amount {
   font-size: 16pt;
-  line-height: 16pt;
+  line-height: 18pt;
   display: inline-block;
   float: right;
 }
 
-/* line 71, ../scss/_transaction.scss */
+/* line 64, ../scss/_transaction.scss */
 .Transaction-details-amount--credit {
   color: #e05b5b;
 }
 
-/* line 75, ../scss/_transaction.scss */
+/* line 68, ../scss/_transaction.scss */
 .Transaction-details-amount--debit {
   color: #69b47e;
 }
 
-/* line 79, ../scss/_transaction.scss */
+/* line 72, ../scss/_transaction.scss */
 .Transaction-details-description {
   font-size: 10pt;
   line-height: 10pt;
@@ -126,13 +118,13 @@
   opacity: 0.5;
 }
 
-/* line 92, ../scss/_transaction.scss */
+/* line 85, ../scss/_transaction.scss */
 .Transaction-details-tagContainer {
-  height: 10px;
-  margin-top: 15px;
+  height: 25px;
+  margin-top: 10px;
 }
 
-/* line 97, ../scss/_transaction.scss */
+/* line 90, ../scss/_transaction.scss */
 .Transaction-tag {
   display: inline-block;
   font-size: 10pt;
@@ -140,15 +132,16 @@
   font-weight: bold;
   margin-right: 10px;
   color: #aaa;
+  opacity: 0.8;
 }
 
-/* line 106, ../scss/_transaction.scss */
+/* line 100, ../scss/_transaction.scss */
 .Transaction-tag--more {
   color: #000;
   opacity: 0.2;
 }
 
-/* line 111, ../scss/_transaction.scss */
+/* line 105, ../scss/_transaction.scss */
 .Transaction-tag--category {
   color: #000;
   opacity: 0.2;
@@ -158,27 +151,27 @@
   text-transform: uppercase;
 }
 
-/* line 120, ../scss/_transaction.scss */
+/* line 114, ../scss/_transaction.scss */
 .Transaction-tag--green {
   color: #7cb58c;
 }
 
-/* line 124, ../scss/_transaction.scss */
+/* line 118, ../scss/_transaction.scss */
 .Transaction-tag--blue {
   color: #3770b0;
 }
 
-/* line 128, ../scss/_transaction.scss */
+/* line 122, ../scss/_transaction.scss */
 .Transaction-tag--yellow {
   color: #e5e497;
 }
 
-/* line 132, ../scss/_transaction.scss */
+/* line 126, ../scss/_transaction.scss */
 .Transaction-tag--purple {
   color: #8f7cb5;
 }
 
-/* line 136, ../scss/_transaction.scss */
+/* line 130, ../scss/_transaction.scss */
 .Transaction-institution {
   height: 10px;
   width: 40px;

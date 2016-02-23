@@ -1,19 +1,20 @@
+{% load humanize %}
 <div class="Navbar">
     <div class="Navbar-logo-container">
 
     </div>
     <div class="Navbar-s2s-container">
         <div class="Navbar-s2s-amount">
-            $12,535.34
+            - {{ total|floatformat:2|intcomma }}
         </div>
-        <div class="Navbar-available-amount-container">
+        <!-- <div class="Navbar-available-amount-container">
             <div class="Navbar-available-amount">
                 $17,332.67 available balance
             </div>
             <div class="Navbar-available-amount">
                 $4,797.33 saved in 7 goals
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="Navbar-navitems-container">
 

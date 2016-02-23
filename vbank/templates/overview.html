@@ -9,13 +9,13 @@
     </head>
     <body>
         <div class="FlexContainer FlexContainer--column">
-            {% include "navbar.html" %}
+            {% include "navbar.html" with total=total %}
             <div class="FlexContainer-inner">
                 <div class="FlexContainer">
                     <div class="FlexContainer BodyContainer FlexContainer--row">
                         <div class="FlexContainer-inner">
                             {% include "sidebar.html" %}
-                            {% include "transactions_list.html" %}
+                            {% include "transactions_list.html" with transactions=transactions %}
                             {% include "details.html" %}
                         </div>
                     </div>
