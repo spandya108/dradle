@@ -1,10 +1,10 @@
-/* line 1, ../scss/_transaction_list.scss */
+/* line 1, ../../scss/vbank/overview/_transaction_list.scss */
 .TransactionsList-container {
   float: left;
   height: 100%;
 }
 
-/* line 6, ../scss/_transaction_list.scss */
+/* line 6, ../../scss/vbank/overview/_transaction_list.scss */
 .TransactionsList {
   width: 600px;
   border-right: 1px solid #ddd;
@@ -15,7 +15,7 @@
   height: 100%;
 }
 
-/* line 16, ../scss/_transaction_list.scss */
+/* line 16, ../../scss/vbank/overview/_transaction_list.scss */
 .TransactionList-header {
   width: 600px;
   height: 125px;
@@ -23,7 +23,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* line 1, ../scss/_transaction.scss */
+/* line 1, ../../scss/vbank/overview/_transaction.scss */
 .Transaction {
   height: 100px;
   width: 100%;
@@ -31,7 +31,7 @@
   display: block;
 }
 
-/* line 8, ../scss/_transaction.scss */
+/* line 8, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-dateTime {
   float: left;
   height: 100%;
@@ -42,7 +42,7 @@
   padding-top: 15px;
 }
 
-/* line 18, ../scss/_transaction.scss */
+/* line 18, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-dateTime-month {
   text-transform: uppercase;
   font-size: 10pt;
@@ -51,7 +51,7 @@
   color: #8f8f8f;
 }
 
-/* line 26, ../scss/_transaction.scss */
+/* line 26, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-dateTime-day {
   color: #8f8f8f;
   font-weight: bold;
@@ -59,7 +59,7 @@
   line-height: 14pt;
 }
 
-/* line 33, ../scss/_transaction.scss */
+/* line 33, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-details {
   float: left;
   height: 100%;
@@ -68,12 +68,12 @@
   padding: 10px 15px 10px 10px;
 }
 
-/* line 41, ../scss/_transaction.scss */
+/* line 41, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-details-row {
   height: 25px;
 }
 
-/* line 45, ../scss/_transaction.scss */
+/* line 45, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-details-title {
   font-size: 16pt;
   line-height: 20pt;
@@ -86,7 +86,7 @@
   opacity: 0.6;
 }
 
-/* line 57, ../scss/_transaction.scss */
+/* line 57, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-details-amount {
   font-size: 16pt;
   line-height: 18pt;
@@ -94,17 +94,17 @@
   float: right;
 }
 
-/* line 64, ../scss/_transaction.scss */
+/* line 64, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-details-amount--credit {
   color: #e05b5b;
 }
 
-/* line 68, ../scss/_transaction.scss */
+/* line 68, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-details-amount--debit {
   color: #69b47e;
 }
 
-/* line 72, ../scss/_transaction.scss */
+/* line 72, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-details-description {
   font-size: 10pt;
   line-height: 10pt;
@@ -118,13 +118,13 @@
   opacity: 0.5;
 }
 
-/* line 85, ../scss/_transaction.scss */
+/* line 85, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-details-tagContainer {
   height: 25px;
   margin-top: 10px;
 }
 
-/* line 90, ../scss/_transaction.scss */
+/* line 90, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-tag {
   display: inline-block;
   font-size: 10pt;
@@ -135,13 +135,13 @@
   opacity: 0.8;
 }
 
-/* line 100, ../scss/_transaction.scss */
+/* line 100, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-tag--more {
   color: #000;
   opacity: 0.2;
 }
 
-/* line 105, ../scss/_transaction.scss */
+/* line 105, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-tag--category {
   color: #000;
   opacity: 0.2;
@@ -151,36 +151,31 @@
   text-transform: uppercase;
 }
 
-/* line 114, ../scss/_transaction.scss */
+/* line 114, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-tag--green {
   color: #7cb58c;
 }
 
-/* line 118, ../scss/_transaction.scss */
+/* line 118, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-tag--blue {
   color: #3770b0;
 }
 
-/* line 122, ../scss/_transaction.scss */
+/* line 122, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-tag--yellow {
   color: #e5e497;
 }
 
-/* line 126, ../scss/_transaction.scss */
+/* line 126, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-tag--purple {
   color: #8f7cb5;
 }
 
-/* line 130, ../scss/_transaction.scss */
+/* line 130, ../../scss/vbank/overview/_transaction.scss */
 .Transaction-institution {
   height: 10px;
   width: 40px;
   background-color: rgba(8, 70, 168, 0.7);
   float: right;
   bottom: 0;
-}
-
-/* line 4, ../scss/overview.scss */
-body {
-  font-family: 'Titillium Web', sans-serif;
 }

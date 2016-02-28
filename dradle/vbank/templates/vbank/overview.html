@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/vbank/overview.css">
+{% endblock extra_css %}
+
+{% block section_title %}Overview{% endblock %}
+
+{% block content %}
+
+<div class="FlexContainer-inner">
+    {% include "vbank/transactions_list.html" with transactions=transactions %}
+    {% include "vbank/details.html" %}
+</div>
+
+{% endblock content %}

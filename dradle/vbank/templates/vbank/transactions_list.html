@@ -1,7 +1,7 @@
 <div class="TransactionsList-container">
     <ul class="TransactionsList">
         {% for transaction in transactions %}
-            {% include "transaction.html" with transaction=transaction %}
+            {% include "vbank/transaction.html" with transaction=transaction %}
         {% endfor %}
     </ul>
 </div>

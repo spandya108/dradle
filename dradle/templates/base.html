@@ -1,24 +1,24 @@
 <!DOCTYPE html>
     <head>
-        <title>Overview</title>
 
+        <title>{% block section_title %}{% endblock %} | Dradle</title>
         {% include "_js_libs.html" %}
 
+        {% block css %}
         <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/base.css">
+        {% endblock css %}
+
+        {% block extra_css %}{% endblock %}
+
     </head>
     <body>
         <div class="FlexContainer FlexContainer--column">
             {% include "navbar.html" with total=total %}
             <div class="FlexContainer-inner">
-                <div class="FlexContainer">
-                    <div class="FlexContainer BodyContainer FlexContainer--row">
-                        {% include "sidebar.html" %}
-                        <div class="FlexContainer-inner">
-                            {% include "transactions_list.html" with transactions=transactions %}
-                            {% include "details.html" %}
-                        </div>
-                    </div>
+                <div class="FlexContainer FlexContainer--row">
+                    {% include "sidebar.html" %}
+                    {% block content %}{% endblock content %}
                 </div>
             </div>
         </div>

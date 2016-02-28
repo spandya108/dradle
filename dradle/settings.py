@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_APP_DIR = os.path.abspath(os.path.join(BASE_DIR, 'dradle/'))
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
@@ -48,7 +49,7 @@ INSTALLED_APPS = (
     'django_extensions',
     'django.contrib.humanize',
     # dradle apps
-    'vbank',
+    'dradle.vbank',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -67,7 +68,10 @@ ROOT_URLCONF = 'dradle.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.abspath(os.path.join(BASE_APP_DIR, 'templates')),
+            os.path.abspath(os.path.join(BASE_APP_DIR, 'vbank/templates')),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,6 +81,9 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.static',
             ],
+            # 'loaders': [
+            #     'django.template.loaders.app_directories.Loader',
+            # ]
         },
     },
 ]

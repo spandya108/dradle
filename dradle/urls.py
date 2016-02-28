@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^vbank/', include('vbank.urls')),
+    url(r'^vbank/', include('dradle.vbank.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
