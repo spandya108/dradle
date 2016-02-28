@@ -9,7 +9,7 @@ from .models import (
 
 class OverviewView(TemplateView):
 
-    template = 'vbank/overview.html'
+    template = 'vbank/base.html'
 
     def dispatch(self, request):
         return render(
