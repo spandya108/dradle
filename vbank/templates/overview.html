@@ -13,8 +13,8 @@
             <div class="FlexContainer-inner">
                 <div class="FlexContainer">
                     <div class="FlexContainer BodyContainer FlexContainer--row">
+                        {% include "sidebar.html" %}
                         <div class="FlexContainer-inner">
-                            {% include "sidebar.html" %}
                             {% include "transactions_list.html" with transactions=transactions %}
                             {% include "details.html" %}
                         </div>
